@@ -9,27 +9,27 @@ lca_info = {
   'paymentgateway_secretkey' : '',
 
 # Contact email for the committee
-  'contact_email' : 'contact@lca2011.linux.org.au',
+  'contact_email' : 'contact@lca2013.linux.org.au',
 # All email sent by ZK will Bcc here:
-  'bcc_email' : 'archive@lca2011.linux.org.au',
-  'webmaster_email': 'webmaster@lca2011.linux.org.au',
+  'bcc_email' : 'archive@lca2013.linux.org.au',
+  'webmaster_email': 'webmaster@lca2013.linux.org.au',
 
 # Event information
   'event_parent_organisation' : 'Linux Australia',
   'event_parent_url' : 'http://www.linux.org.au/',
-  'event_name' : 'linux.conf.au 2011',
-  'event_shortname' : 'lca2011',
-  'event_host' : 'lca2011.linux.org.au',
-  'event_url' : 'http://lca2011.linux.org.au',
-  'event_permalink' : 'http://lca2011.linux.org.au',
-  'event_hashtag' : '#LCA2011',
+  'event_name' : 'linux.conf.au 2013',
+  'event_shortname' : 'lca2013',
+  'event_host' : 'lca2013.linux.org.au',
+  'event_url' : 'http://lca2013.linux.org.au',
+  'event_permalink' : 'http://lca2013.linux.org.au',
+  'event_hashtag' : '#LCA2013',
   'event_tax_number' : 'ABN 56 987 117 479',
-  'event_postal_address' : 'PO BOX 2010 Keperra, Queensland, 4054',
+  'event_postal_address' : 'PO BOX 530, Woden, ACT, 2606',
   'event_fax_number' : '',
-  'event_phone_number': '+61 7 3103 7998',
-  'event_byline': 'linux.conf.au 2011 | 24 - 29 Jan | Follow the Flow',
+  'event_phone_number': '+61 2 6140 4546',
+  'event_byline': 'linux.conf.au 2013 | 28 Jan - 1 Feb | Come Join the Party',
   'event_pricing_disclaimer': 'All prices are in Australian dollars and include 10% GST.',
-  'date' : datetime(2011, 1, 24, 9, 0, 00),
+  'date' : datetime(2011, 1, 28, 9, 0, 00),
   'media_license_name' : 'Creative Commons Attribution-Share Alike License',
   'media_license_url'  : 'http://creativecommons.org/licenses/by-sa/3.0/',
   #'sales_tax_multiplier' : 0.125,
@@ -38,32 +38,33 @@ lca_info = {
   'invoice_message' : 'To qualify for the earlybird discount you must have registered and paid by the 8th of November (unless earlybird tickets sell out earlier).',
 
 # Possible statuses not_open|open|closed
-  'cfp_status' : 'closed',
-  'cfmini_status' : 'closed',
+  'cfp_status' : 'open',
+  'cfmini_status' : 'open',
   'paper_editing' : 'open',
   'funding_status' : 'not_open',
   'funding_editing' : 'not_open',
-  'conference_status': 'open',
+  'conference_status': 'not_open',
   'account_creation': True,
 # Mode
   'cfp_hide_assistance_info': 'no',
+  'cfp_hide_assistance_options': 'no',
   'cfp_hide_scores': 'no',
 
   'cfp_miniconf_list' : ["(none)", "Sysadmin", "Business", "Haecksen"],
 
   'emails': {
-     'presentation' : 'speakers@lca2011.linux.org.au',
-     'tutorial - 1 hour and 45 minutes'     : 'speakers@lca2011.linux.org.au',
-     'tutorial - 3 hours and 30 minutes'    : 'speakers@lca2011.linux.org.au',
-     'miniconf'     : 'miniconfs@lca2011.linux.org.au',
-     'funding'      : 'funding@lca2011.linux.org.au',
-     'poster' : 'speakers@lca2011.linux.org.au'
+     'presentation' : 'speakers@lca2013.linux.org.au',
+     'tutorial - 1 hour and 45 minutes'     : 'speakers@lca2013.linux.org.au',
+     'tutorial - 3 hours and 30 minutes'    : 'speakers@lca2013.linux.org.au',
+     'miniconf'     : 'miniconfs@lca2013.linux.org.au',
+     'funding'      : 'funding@lca2013.linux.org.au',
+     'poster' : 'speakers@lca2013.linux.org.au'
   },
 
-  'proposal_update_email': 'archive@lca2011.linux.org.au', # recieve notifications when proposals are changed. Leave blank for none.
+  'proposal_update_email': 'archive@lca2013.linux.org.au', # recieve notifications when proposals are changed. Leave blank for none.
 
-  'google_map_url': 'http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=117014168848232117270.00048b169407c904d6506',
-  'google_map_latlng': '-27.478216,153.019466',
+  'google_map_url': 'https://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=117014168848232117270.00048b169407c904d6506',
+  'google_map_latlng': '-35.308056,149.124444',
 }
 
 lca_rego = {
@@ -161,30 +162,37 @@ lca_rego = {
 lca_menu = [
   ('Home', '/', 'home'),
   ('About', '/about/linux.conf.au', 'about'),
-  ('Brisbane', '/brisbane/about', 'brisbane'),
-  ('Sponsors', '/sponsors/sponsors', 'sponsors'),
-  ('Programme', '/programme/about', 'programme'),
-  ('Register', '/register/prices', 'register'),
+  ('Call for Proposals', '/cfp', 'cfp'),
+  ('Call for Miniconfs', '/miniconf-cfp', 'miniconf-cfp'),
+  ('FAQ', '/faq', 'faq'),
+  ('Code of Conduct', '/codeofconduct', 'codeofconduct'),
+  #('Canberra', '/canberra/about', 'canberra'),
+  #('Sponsors', '/sponsors/sponsors', 'sponsors'),
+  #('Programme', '/programme/about', 'programme'),
+  #('Register', '/register/prices', 'register'),
   #('Register', '/register/prices', 'register'), # -- Stage 4
-  ('Media', '/media/news', 'media'),
+  #('Media', '/media/releases', 'media'),
   ('Contact', '/contact', 'contact'),
-  #('Planet', 'http://planet.lca2011.linux.org.au', 'planet'),
-  ('Wiki', '/wiki', 'wiki'),
+  #('Planet', 'http://planet.lca2013.linux.org.au', 'planet'),
+  #('Wiki', '/wiki', 'wiki'),
 ]
 
 lca_submenus = {
-  'about': ['linux.conf.au', 'lca2011 Ninjas', 'Venue', 'History', 'Linux/Open Source', 'Harassment'],
-  'brisbane': ['About', 'Sightseeing'],
-  'sponsors': ['Sponsors', 'Why Sponsor'],
+  'about': ['linux.conf.au', 'Venues', 'Transport', '2013 Team','Terms and Conditions'],
+  #'about': ['linux.conf.au', 'Canberra', '2013 Party Crew', 'Linux/Open Source', 'Harrassment'],
+  #'canberra': ['About', 'Sightseeing'],
+  #'sponsors': ['Sponsors', 'Why Sponsor'],
   #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
   #'programme': ['About', 'Papers', 'Miniconfs', 'Presentations', 'Posters', 'Tutorials'], # stage 1
   #'programme': ['About', 'Keynotes', 'Miniconf Info', 'Papers Info', 'Social Events', 'Open Day', 'Partners Programme'], # stage 2
   #'programme': ['About', 'Keynotes', 'Miniconfs', 'Speakers Info', 'Social Events', 'Open Day', 'Partners Programme'], # stage 2a
-  'programme': ['About', 'Keynotes', 'Miniconfs', 'Schedule', 'Social Events', 'Open Day', 'Partners Programme'], # stage 3
+  #'programme': ['About', 'Keynotes', 'Miniconfs', 'Schedule', 'Social Events', 'Open Day', 'Partners Programme'], # stage 3
   #'programme': ['About', 'Keynotes', 'Miniconfs','Schedule','Social Events','Open Day', 'Partners Programme'], # stage 4?
-  'register': ['Prices', 'Accommodation', 'Terms and Conditions'],
+  #'register': ['Prices', 'Accommodation', 'Terms and Conditions'],
   #'register': ['Prices', 'Funding', 'Accommodation', 'Terms and Conditions'],
   #'register': ['Prices/Ticket types','Terms and Conditions','Accommodation','Partners programme'], # stage 4
-  'media': ['News','In the press','Graphics']
+  #'media': ['News','In the press','Graphics'],
+  'media': ['Media Releases']
+
 }
 
