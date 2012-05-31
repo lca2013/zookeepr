@@ -13,8 +13,8 @@ setup(
     author_email='zookeepr-core@zookeepr.org',
     url='http://zookeepr.org',
     install_requires=[
-        "WebOb==0.9.8",
-        "Pylons>=0.9.7",
+        "WebOb==0.9.6.1",
+        "Pylons==0.9.7",
         "SQLAlchemy==0.5.8",
         "AuthKit>=0.4.0",
         # FormEncode used to do form input validation
