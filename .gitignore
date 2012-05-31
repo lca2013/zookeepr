@@ -11,6 +11,8 @@ data
 go-pylons.py
 pylons
 
+.DS_store
+.gitignore
 # OLD Stuff may not be needed any longer
 #.coverage
 #dist
