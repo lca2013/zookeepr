@@ -54,11 +54,9 @@ lca_info = {
 
   'emails': {
      'presentation' : 'speakers@lca2013.linux.org.au',
-     'tutorial - 1 hour and 45 minutes'     : 'speakers@lca2013.linux.org.au',
-     'tutorial - 3 hours and 30 minutes'    : 'speakers@lca2013.linux.org.au',
+     'tutorial - 1 hour and 30 minutes'     : 'speakers@lca2013.linux.org.au',
      'miniconf'     : 'miniconfs@lca2013.linux.org.au',
      'funding'      : 'funding@lca2013.linux.org.au',
-     'poster' : 'speakers@lca2013.linux.org.au'
   },
 
   'proposal_update_email': 'archive@lca2013.linux.org.au', # recieve notifications when proposals are changed. Leave blank for none.
