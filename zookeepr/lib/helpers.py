@@ -16,7 +16,7 @@ try:
 except:
     from webhelpers.html.secure_form import secure_form
 
-from lxml.html.clean import Cleaner
+#from lxml.html.clean import Cleaner
 
 import webhelpers.util as util
 
@@ -574,9 +574,9 @@ def latex_clean(str):
 
 def html_clean(str):
     """ Clean up HTML to be safe """
-    cleaner = Cleaner(safe_attrs_only=True)
-    return cleaner.clean_html(str)
-    
+    #cleaner = Cleaner(safe_attrs_only=True)
+    #return cleaner.clean_html(str)
+    return str
     
     
 def url_for(*args, **kwargs):
