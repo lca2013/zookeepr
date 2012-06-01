@@ -113,6 +113,9 @@
                                     <div class="cleared"></div>
                                 </div>
                             </div>
+<%doc>
+## 120531 commented out ticket #277
+
 ## % if h.url_for() == '/': #Un/comment to enable/disable the sponsor box on the main page
                             <div class="netv-block">
                                 <div class="netv-block-tl"></div>
@@ -141,6 +144,10 @@
                                     <div class="cleared"></div>
                                 </div>
                             </div>
+</%doc>
+
+<%doc>
+## 120531 commented out ticket #277
                             <div class="netv-block">
                                 <div class="netv-block-tl"></div>
                                 <div class="netv-block-tr"></div>
@@ -168,7 +175,11 @@
                                     <div class="cleared"></div>
                                 </div>
                             </div>
+</%doc>
+
 ## % else:
+<%doc>
+## 120531 commented out ticket #277
                             <div class="netv-block">
                                 <div class="netv-block-tl"></div>
                                 <div class="netv-block-tr"></div>
@@ -196,6 +207,7 @@
                                     <div class="cleared"></div>
                                 </div>
                             </div>
+</%doc>
 ##% endif
                         </div>
                         <div class="netv-layout-cell netv-content">
@@ -236,7 +248,7 @@
                     <div class="netv-footer-inner">
                         <a href="/media/news/rss" class="netv-rss-tag-icon" title="RSS"></a>
                         <div class="netv-footer-text">
-                            <p>&copy; 2011 <a href="http://linux.conf.au/">linux.conf.au 2012</a> and <a href="http://www.linux.org.au">Linux Australia</a> | Linux is a registered trademark of Linus Torvalds | <a href="http://validator.w3.org/check?uri=referer">Valid HTML 4.01</a> | <a href="/sitemap">Sitemap</a></p>
+                            <p>&copy; 2012 <a href="http://linux.conf.au/">linux.conf.au 2013</a> and <a href="http://www.linux.org.au">Linux Australia</a> | Linux is a registered trademark of Linus Torvalds | <a href="http://validator.w3.org/check?uri=referer">Valid HTML 4.01</a> | <a href="/sitemap">Sitemap</a></p>
                         </div>
                         <div class="netv-footer-background"></div>
                         <div class="cleared"></div>
