@@ -3,7 +3,6 @@ config.ini
 logs
 setup-dir
 zookeepr.egg-info
-zookeepr/config/lca_info.py
 .vagrant
 data
 *.pyc
