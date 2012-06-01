@@ -158,39 +158,16 @@ lca_rego = {
 }
 
 lca_menu = [
-  ('Home', '/', 'home'),
-  ('About', '/about/linux.conf.au', 'about'),
-  ('Call for Proposals', '/cfp', 'cfp'),
-  ('Call for Miniconfs', '/miniconf-cfp', 'miniconf-cfp'),
-  ('FAQ', '/faq', 'faq'),
-  ('Code of Conduct', '/codeofconduct', 'codeofconduct'),
-  #('Canberra', '/canberra/about', 'canberra'),
-  #('Sponsors', '/sponsors/sponsors', 'sponsors'),
-  #('Programme', '/programme/about', 'programme'),
-  #('Register', '/register/prices', 'register'),
-  #('Register', '/register/prices', 'register'), # -- Stage 4
-  #('Media', '/media/releases', 'media'),
-  ('Contact', '/contact', 'contact'),
-  #('Planet', 'http://planet.lca2013.linux.org.au', 'planet'),
-  #('Wiki', '/wiki', 'wiki'),
+ ('Home', '/', 'home'),
+ ('About', '/about/linux.conf.au', 'about'),
+ ('Call for Proposals', '/cfp', 'cfp'),
+ ('Call for Miniconfs', '/miniconf-cfp', 'miniconf-cfp'),
+ ('FAQ', '/faq', 'faq'),
+ ('Conditions of Registration', '/cor/terms_and_conditions', 'cor'),
+ ('Contact', '/contact', 'contact'),
 ]
 
 lca_submenus = {
-  'about': ['linux.conf.au', 'Venues', 'Transport', '2013 Team','Terms and Conditions'],
-  #'about': ['linux.conf.au', 'Canberra', '2013 Party Crew', 'Linux/Open Source', 'Harrassment'],
-  #'canberra': ['About', 'Sightseeing'],
-  #'sponsors': ['Sponsors', 'Why Sponsor'],
-  #'programme': ['About', 'Social Events', 'Open Day', 'Partners Programme'], # stage 0
-  #'programme': ['About', 'Papers', 'Miniconfs', 'Presentations', 'Posters', 'Tutorials'], # stage 1
-  #'programme': ['About', 'Keynotes', 'Miniconf Info', 'Papers Info', 'Social Events', 'Open Day', 'Partners Programme'], # stage 2
-  #'programme': ['About', 'Keynotes', 'Miniconfs', 'Speakers Info', 'Social Events', 'Open Day', 'Partners Programme'], # stage 2a
-  #'programme': ['About', 'Keynotes', 'Miniconfs', 'Schedule', 'Social Events', 'Open Day', 'Partners Programme'], # stage 3
-  #'programme': ['About', 'Keynotes', 'Miniconfs','Schedule','Social Events','Open Day', 'Partners Programme'], # stage 4?
-  #'register': ['Prices', 'Accommodation', 'Terms and Conditions'],
-  #'register': ['Prices', 'Funding', 'Accommodation', 'Terms and Conditions'],
-  #'register': ['Prices/Ticket types','Terms and Conditions','Accommodation','Partners programme'], # stage 4
-  #'media': ['News','In the press','Graphics'],
-  'media': ['Media Releases']
-
+ 'about': ['linux.conf.au', 'Venues', 'Transport', '2013 Team'],
+ 'cor': ['Terms and Conditions', 'Code Of Conduct'],
 }
-
