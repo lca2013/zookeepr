@@ -639,7 +639,8 @@ class AdminController(BaseController):
           t = row[t_offs]
           # The invoice reference (t) takes the form "lca2012 i-18 p-11"
           # We only want the i value so strip the rest off
-          t = t.strip("lca2012 i")
+          ## changed to 2013 part of ticket #299, hopefully will still work
+          t = t.strip("lca2013 i")
           t = t.strip("-")
           t = int(t.split(" ")[0])
 
