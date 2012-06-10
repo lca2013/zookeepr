@@ -75,7 +75,7 @@ class SillyDescriptionChecksum(validators.FormValidator):
         checksum = h.silly_description_checksum(silly_description)
         if values.get(self.__checksum_name, None) != checksum:
             error_dict = {
-                self.__silly_name: "Smart enough to hack the silly description, not smart enough to hack the checksum.",
+                self.__silly_name: "Smart enough to hack the silly description, not smart enough to hack the checksum. %s" % random.choice(lca_rego['silly_description']['errors']),
             }
             raise Invalid(self.__class__.__name__, values, state, error_dict=error_dict)
 
