@@ -77,6 +77,9 @@ lca_rego = {
   # Set to no once the conference starts to speed things up
   'confirm_email_address' : 'yes',
 
+  'ask_past_confs' : 'yes',
+  'lca_optional_stuff' : 'yes',
+
   'volunteer':
     (
         {'title': 'Volunteer Category', 'questions':
