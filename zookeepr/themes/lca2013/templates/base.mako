@@ -50,14 +50,6 @@
         <!--[if IE 6]><link rel="stylesheet" href="ie6.css" type="text/css" media="screen" /><![endif]-->
         <!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" /><![endif]-->
 
-<style>
-@font-face {
-  font-family: 'Symbola';
-  src: url("Symbola.ttf") format("ttf");
-}
-.silly {font-face: 'Symbola';}
-</style>
-
 
         ${self.extra_head()}
     </head>
