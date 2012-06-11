@@ -162,7 +162,7 @@ lca_rego = {
                    "Pizza is an edible food",
                    "except if the pizza maker is nude.",
                   ],
-        'emoji': [8, 5, 3, 7, 0, 1, 2, 6, 4, 9]
+        'emoji': ['8', '5', '3', '7', '0', '1', '2', '6', '4', '9']
     }
 }
 
