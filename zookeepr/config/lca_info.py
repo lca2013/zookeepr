@@ -39,7 +39,7 @@ lca_info = {
 
 # Possible statuses not_open|open|closed
   'cfp_status' : 'open',
-  'cfmini_status' : 'not_open',
+  'cfmini_status' : 'open',
   'paper_editing' : 'open',
   'funding_status' : 'not_open',
   'funding_editing' : 'not_open',
@@ -161,7 +161,7 @@ lca_menu = [
  ('Home', '/', 'home'),
  ('About', '/about/linux.conf.au', 'about'),
  ('Call for Proposals', '/cfp', 'cfp'),
- # ('Call for Miniconfs', '/miniconf-cfp', 'miniconf-cfp'),
+ ('Call for Miniconfs', '/miniconf-cfp', 'miniconf-cfp'),
  ('FAQ', '/faq', 'faq'),
  ('Conditions of Registration', '/cor/terms_and_conditions', 'cor'),
  ('Contact', '/contact', 'contact'),
