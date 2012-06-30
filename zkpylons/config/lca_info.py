@@ -158,7 +158,13 @@ lca_rego = {
                "neophyte", "expert", "bundle", "package",
                "abstraction", "theorem", "display", "distro",
                "restriction", "device", "function", "reference",
-               "alien"]
+               "alien"],
+        'errors': ["The school parking lot is full of gravel",
+                   "it enhardens my mode of travel.",
+                   "Pizza is an edible food",
+                   "except if the pizza maker is nude.",
+                  ],
+        'emoji': [8, 5, 3, 7, 0, 1, 2, 6, 4, 9]
     }
 }
 
