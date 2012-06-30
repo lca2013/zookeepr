@@ -1,6 +1,7 @@
 # coding=utf-8
 import logging
 import re
+import random
 
 from pylons import request, response, session, tmpl_context as c
 from zkpylons.lib.helpers import redirect_to
@@ -76,7 +77,13 @@ class SillyDescriptionChecksum(validators.FormValidator):
         checksum = h.silly_description_checksum(silly_description)
         if values.get(self.__checksum_name, None) != checksum:
             error_dict = {
-                self.__silly_name: "Smart enough to hack the silly description, not smart enough to hack the checksum. %s" % random.choice(lca_rego['silly_description']['errors']),
+                self.__silly_name: """Smart enough to hack the silly description, not smart enough to hack the checksum.
+<style>
+@font-face {font-family: 'Symbola'; src: url("Symbola.ttf") format("ttf");}
+.silly {font-face: 'Symbola';}
+</style>
+<p>%s</p>
+<p>%s</p>""" % (checksum, random.choice(lca_rego['silly_description']['errors'])),
             }
             raise Invalid(self.__class__.__name__, values, state, error_dict=error_dict)
 
