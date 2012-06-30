@@ -26,51 +26,44 @@
 <%def name="contents()">
     ## Defined in children
 </%def>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en-us">
-    <head>
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
         <title>${ self.title() }</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" media="screen" href="/screen.css" type="text/css">
         <link rel="stylesheet" media="screen" href="/css/lightbox.css" type="text/css">
         <link rel="stylesheet" media="print" href="/print.css" type="text/css">
-        <script type="text/javascript" src="/jquery.min.js"></script>
-        <link href="/media/news/rss" rel="alternate" type="application/rss+xml" title="LCA2013 News">
+        <link rel="stylesheet" media="print" href="/print.css" type="text/css">
+        
+	<link href="/media/news/rss" rel="alternate" type="application/rss+xml" title="LCA2013 News">
         <!--[if IE 6]><link rel="stylesheet" href="ie6.css" type="text/css" media="screen" /><![endif]-->
         <!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" /><![endif]-->
 
-        <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-28436199-1']);
-	  _gaq.push(['_setDomainName', 'linux.org.au']);
-	  _gaq.push(['_setAllowLinker', true]);
-          _gaq.push(['_trackPageview']);
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-                            
-        </script>
+<style>
+@font-face {
+  font-family: 'Symbola';
+  src: url("Symbola.ttf") format("ttf");
+}
+.silly {font-face: 'Symbola';}
+</style>
 
 
         ${self.extra_head()}
-        <script type="text/javascript">
-           jQuery(document).ready(function() {
-             jQuery("#flash > div").hide().fadeIn(3500);
-             jQuery("#flash > div").fadeTo(3000, 0.3);
-             jQuery("#flash > div").hover(function() {
-               jQuery(this).fadeTo(250, 1);
-             },function(){
-               jQuery(this).fadeTo(250, 0.3);
-             });
-           });
-        </script>  
     </head>
     ${self.extra_body()}
-        <div id="netv-main">
+
+        <div role="main" id="netv-main">
             <div class="netv-sheet">
                 <div class="netv-sheet-tl"></div>
                 <div class="netv-sheet-tr"></div>
@@ -246,8 +239,38 @@
                 <p class="netv-page-footer">&nbsp;</p>
             </div>
         </div>
-        <script src="/js/prototype.js" type="text/javascript"></script>
-        <script src="/js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
-        <script src="/js/lightbox.js" type="text/javascript"></script>
+
+  <script src="https//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="https//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"><\/script>')</script>
+
+  <script src="/js/jquery.masonry.min.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#flash > div").hide().fadeIn(3500);
+      $("#flash > div").fadeTo(3000, 0.3);
+      $("#flash > div").hover(function() {
+        $(this).fadeTo(250, 1);
+      },function(){
+        $(this).fadeTo(250, 0.3);
+      });
+      $('#netv-main').masonry({
+        itemSelector: '.netv-vmenublock',
+        columnWidth: 100
+      });
+    });
+  </script>  
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28436199-1']);
+    _gaq.push(['_setDomainName', 'linux.org.au']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+  </script>
+
     </body>
 </html>
