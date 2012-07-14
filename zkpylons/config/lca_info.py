@@ -42,7 +42,7 @@ lca_info = {
 
 # Possible statuses not_open|open|closed
   'cfp_status' : 'open',
-  'cfmini_status' : 'open',
+  'cfmini_status' : 'closed',
   'proposal_editing' : 'open',
   'funding_status' : 'not_open',
   'funding_editing' : 'not_open',
