@@ -1,0 +1,29 @@
+production.ini
+development.ini
+*.db
+data
+*.pyc
+*~
+<<<<<<< HEAD
+go-pylons.py
+pylons
+
+.DS_store
+.gitignore
+# OLD Stuff may not be needed any longer
+#.coverage
+#dist
+#easy-install.pth
+#./lib
+#setup-dir/*
+#site.py
+#zookeepr/public/att-data
+#zookeepr/public/photocomp/*
+#zookeepr.wsgi
+#test.ini
+=======
+env
+zk.egg-info
+zkpylons/public/att-data
+zkpylons/public/photocomp
+>>>>>>> lca2013/master
