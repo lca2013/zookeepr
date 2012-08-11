@@ -41,19 +41,19 @@ lca_info = {
   'invoice_message' : 'To qualify for the earlybird discount you must have registered and paid by the 8th of November (unless earlybird tickets sell out earlier).',
 
 # Possible statuses not_open|open|closed
-  'cfp_status' : 'open',
+  'cfp_status' : 'closed',
   'cfmini_status' : 'closed',
-  'proposal_editing' : 'open',
+  'proposal_editing' : 'closed',
   'funding_status' : 'not_open',
   'funding_editing' : 'not_open',
   'conference_status': 'not_open',
-  'account_creation': True,
+  'account_creation': False,
 # Mode
   'cfp_hide_assistance_info': 'no',
   'cfp_hide_assistance_options': 'no',
   'cfp_hide_scores': 'no',
 
-  'cfp_miniconf_list' : ["(none)", "Sysadmin", "Business", "Haecksen"],
+  'cfp_miniconf_list' : ["(none)", "Open Government", "Arduno Mini-Conference", "OpenStack", "Open Programming Miniconf", "Systems Administration", "Advances in Linux Security", "Cross-Distro Mini-Conf for Linux.conf.au 2013", "Multimedia and Music Miniconf 2013", "Haecksen", "Cloud, Distributed Storage and High Availability", "Developer Automation and Continuous Integration", "Browser Miniconf", "MobileFOSS"],
 
   'emails': {
      'presentation' : 'speakers@lca2013.linux.org.au',
@@ -187,6 +187,7 @@ lca_menu = [
  ('FAQ', '/faq', 'faq'),
  ('Conditions of Registration', '/cor/terms_and_conditions', 'cor'),
  ('Contact', '/contact', 'contact'),
+ ('Blog', '/blog', 'blog'),
 ]
 
 lca_submenus = {
