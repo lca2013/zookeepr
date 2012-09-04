@@ -182,15 +182,20 @@ lca_rego = {
 lca_menu = [
  ('Home', '/', 'home'),
  ('About', '/about/linux.conf.au', 'about'),
+ ('Sponsor', '/sponsor/sponsors', 'sponsor'),
+ ('Register', '/register', 'register'),
  ('Call for Proposals', '/cfp', 'cfp'),
  ('Call for Miniconfs', '/miniconf-cfp', 'miniconf-cfp'),
  ('FAQ', '/faq', 'faq'),
- ('Conditions of Registration', '/cor/terms_and_conditions', 'cor'),
+## ('Conditions of Registration', '/cor/terms_and_conditions', 'cor'),
  ('Contact', '/contact', 'contact'),
  ('Blog', '/blog', 'blog'),
+
+
 ]
 
 lca_submenus = {
  'about': ['linux.conf.au', 'Venues', 'Transport', '2013 Team'],
- 'cor': ['Terms and Conditions', 'Code Of Conduct'],
+ 'register': [ 'Terms and Conditions', 'Code Of Conduct'],
+ 'sponsor': ['Sponsors', 'Why Sponsor'],
 }
