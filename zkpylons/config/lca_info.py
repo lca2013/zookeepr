@@ -31,6 +31,7 @@ lca_info = {
   'event_byline': 'linux.conf.au 2013 | 28 Jan - 1 Feb | Come Join the Party',
   'event_pricing_disclaimer': 'All prices are in Australian dollars and include 10% GST.',
   'event_trademark_notice': 'Linux is a registered trademark of Linus Torvalds',
+  'event_airport_code': 'CBR',
   'date' : datetime(2013, 1, 28, 9, 0, 00),
   'media_license_name' : 'Creative Commons Attribution-Share Alike License',
   'media_license_url'  : 'http://creativecommons.org/licenses/by-sa/3.0/',
