@@ -68,8 +68,8 @@ lca_info = {
 #      {'name': 'lca2006', 'src': '/images/history/lca2006-logo.png', 'url': 'http://lca2006.linux.org.au/'},
     ],
     'slideshow': [
-#      {'name': 'lca2008', 'src': '/images/history/lca2008-logo.png'},
-#      {'name': 'lca2009', 'src': '/images/history/lca2009-logo.png'},
+      {'name': 'Anchor', 'src': '/images/sponsors/anchor-white-bg.png'},
+      {'name': 'Linux Magazine', 'src': '/images/sponsors/linux-magazine.png'},
     ],
   },
 
