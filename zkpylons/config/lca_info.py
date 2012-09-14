@@ -44,7 +44,7 @@ lca_info = {
 # Possible statuses not_open|open|closed
   'cfp_status' : 'closed',
   'cfmini_status' : 'closed',
-  'proposal_editing' : 'closed',
+  'proposal_editing' : 'open',
   'funding_status' : 'not_open',
   'funding_editing' : 'not_open',
   'conference_status': 'not_open',
@@ -64,12 +64,12 @@ lca_info = {
   },
   'sponsors': {
     'top': [
-#      {'name': 'lca2007', 'src': '/images/history/lca2007-logo.png', 'url': 'http://lca2007.linux.org.au/'},
-#      {'name': 'lca2006', 'src': '/images/history/lca2006-logo.png', 'url': 'http://lca2006.linux.org.au/'},
+#      {'name': 'lca2007', 'src': '/images/history/lca2007-logo.png', 'href': 'http://lca2007.linux.org.au/'},
+#      {'name': 'lca2006', 'src': '/images/history/lca2006-logo.png', 'href': 'http://lca2006.linux.org.au/'},
     ],
     'slideshow': [
-      {'name': 'Anchor', 'src': '/images/sponsors/anchor-white-bg.png'},
-      {'name': 'Linux Magazine', 'src': '/images/sponsors/linux-magazine.png'},
+      {'name': 'Anchor', 'src': '/images/sponsors/anchor-white-bg.png', 'href': 'http://www.anchor.com.au/'},
+      {'name': 'Linux Magazine', 'src': '/images/sponsors/linux-magazine.png', 'href': 'http://www.linux-magazine.com/'},
     ],
   },
 
