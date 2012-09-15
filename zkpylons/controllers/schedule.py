@@ -76,6 +76,7 @@ class ScheduleController(BaseController):
             c.subsubmenu.append(['/programme/schedule/' + scheduled_date.strftime('%A').lower(), scheduled_date.strftime('%A')])
 
         c.subsubmenu.append([ '/programme/saturday', 'Saturday' ])
+        c.subsubmenu.append([ '/programme/partners', 'Partners' ])
 
     def table(self, day=None):
         # Check if we have any schedule information to display and tell people if we don't
