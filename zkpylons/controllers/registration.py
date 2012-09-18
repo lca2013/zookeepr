@@ -176,8 +176,8 @@ class RegistrationController(BaseController):
 
     def _able_to_edit(self):
         for invoice in h.signed_in_person().invoices:
-            if not invoice.is_void():
-                if invoice.paid() and invoice.total() != 0:
+            if not invoice.is_void:
+                if invoice.is_paid and invoice.total != 0:
                     return False, "Sorry, you've already paid. Contact the team at " + h.lca_info['contact_email'] + " if you need anything changed."
         return True, "You can edit"
 
@@ -631,7 +631,7 @@ class RegistrationController(BaseController):
             # complicated check to see whether invoice is already in the system
             new_invoice = invoice
             for old_invoice in registration.person.invoices:
-                if old_invoice != new_invoice and not old_invoice.manual and not old_invoice.is_void():
+                if old_invoice != new_invoice and not old_invoice.manual and not old_invoice.is_void:
                     if self.invoices_identical(old_invoice, new_invoice):
                         invoice = old_invoice
                         if not quiet:
@@ -652,7 +652,7 @@ class RegistrationController(BaseController):
 
     def check_invoices(self, invoices):
         for invoice in invoices:
-            if not invoice.is_void() and not invoice.manual and not invoice.paid():
+            if not invoice.is_void and not invoice.manual and not invoice.is_paid:
                 for ii in invoice.items:
                     if ii.product and not self._product_available(ii.product, True, ii.qty):
                         invoice.void = "Product " + ii.product.category.name + " - " + ii.product.description + " is no longer available"
@@ -660,12 +660,12 @@ class RegistrationController(BaseController):
 
     def manual_invoice(self, invoices):
         for invoice in invoices:
-            if not invoice.is_void() and invoice.manual:
+            if not invoice.is_void and invoice.manual:
                 return True
         return False
 
     def invoices_identical(self, invoice1, invoice2):
-        if invoice1.total() == invoice2.total():
+        if invoice1.total == invoice2.total:
             if len(invoice1.items) == len(invoice2.items):
                 matched_products = 0
                 invoice1_matched_items = dict()
@@ -852,7 +852,7 @@ class RegistrationController(BaseController):
                     # has to be done last as it is an OR not an AND
                     valid_invoices = []
                     for invoice in registration.person.invoices:
-                        if not invoice.is_void():
+                        if not invoice.is_void:
                             valid_invoices.append(invoice)
                     if len(set([int(id) for id in filter['product']]) & set([x for subL in [[item.product_id for item in invoice.items] for invoice in valid_invoices] for x in subL])) == 0:
                        registration_list.remove(registration)
@@ -898,7 +898,7 @@ class RegistrationController(BaseController):
                     accommodation.append(product.product.description)
 
             for invoice in registration.person.invoices:
-                if invoice.paid() and not invoice.is_void():
+                if invoice.is_paid and not invoice.is_void:
                     invoices.append(str(invoice.id))
                     for item in invoice.items:
                         products.append(str(item.qty) + "x" + item.description)
@@ -972,7 +972,7 @@ class RegistrationController(BaseController):
                             append = True
                         else:
                             for invoice in registration.person.invoices:
-                                if invoice.paid() and not invoice.is_void():
+                                if invoice.is_paid and not invoice.is_void:
                                     for item in invoice.items:
                                         if defaults['type'] == 'concession' and item.description.startswith('Concession'):
                                             append = True
@@ -1033,7 +1033,7 @@ class RegistrationController(BaseController):
             pdns_ticket = False
             ticket = ''
             for invoice in registration.person.invoices:
-                if invoice.paid() and not invoice.is_void():
+                if invoice.is_paid and not invoice.is_void:
                     for item in invoice.items:
                         if item.description.startswith('Penguin Dinner'):
                             dinner_tickets += item.qty
@@ -1140,7 +1140,7 @@ class RegistrationController(BaseController):
         for r in registration_list:
             is_prof = False
             for invoice in r.person.invoices:
-                if invoice.paid() and not invoice.is_void():
+                if invoice.is_paid and not invoice.is_void:
                     if r.person.is_speaker() or r.person.is_miniconf_org():
                         is_prof = True
                     else:
