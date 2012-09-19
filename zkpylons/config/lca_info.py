@@ -64,12 +64,12 @@ lca_info = {
   },
   'sponsors': {
     'top': [
-#      {'name': 'lca2007', 'src': '/images/history/lca2007-logo.png', 'href': 'http://lca2007.linux.org.au/'},
-#      {'name': 'lca2006', 'src': '/images/history/lca2006-logo.png', 'href': 'http://lca2006.linux.org.au/'},
+#      {'alt': 'lca2007', 'src': '/images/history/lca2007-logo.png', 'href': 'http://lca2007.linux.org.au/'},
+#      {'alt': 'lca2006', 'src': '/images/history/lca2006-logo.png', 'href': 'http://lca2006.linux.org.au/'},
     ],
     'slideshow': [
-      {'name': 'Anchor', 'src': '/images/sponsors/anchor-white-bg.png', 'href': 'http://www.anchor.com.au/'},
-      {'name': 'Linux Magazine', 'src': '/images/sponsors/linux-magazine.png', 'href': 'http://www.linux-magazine.com/'},
+      {'alt': 'Anchor', 'src': '/images/sponsors/anchor-white-bg.png', 'href': 'http://www.anchor.com.au/'},
+      {'alt': 'Linux Magazine', 'src': '/images/sponsors/linux-magazine.png', 'href': 'http://www.linux-magazine.com/'},
     ],
   },
 
