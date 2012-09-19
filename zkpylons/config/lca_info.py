@@ -183,6 +183,7 @@ lca_rego = {
 lca_menu = [
  ('Home', '/', 'home'),
  ('About', '/about/linux.conf.au', 'about'),
+ ('Programme', '/programme/schedule', 'programme'),
  ('Venue', '/venue/venues', 'venue'),
  ('Sponsor', '/sponsor/sponsors', 'sponsor'),
  ('Register', '/register', 'register'),
@@ -191,9 +192,8 @@ lca_menu = [
  ('FAQ', '/faq', 'faq'),
 ## ('Conditions of Registration', '/cor/terms_and_conditions', 'cor'),
  ('Contact', '/contact', 'contact'),
+ ('Wiki', '/wiki', 'wiki'),
  ('Blog', '/blog', 'blog'),
-
-
 ]
 
 lca_submenus = {
