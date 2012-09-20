@@ -185,7 +185,6 @@ lca_menu = [
  ('About', '/about/linux.conf.au', 'about'),
  ('Programme', '/programme/schedule', 'programme'),
  ('Venue', '/venue/venues', 'venue'),
- ('Programme', '/programme/schedule', 'programme'),
  ('Sponsor', '/sponsor/sponsors', 'sponsor'),
  ('Register', '/register', 'register'),
 # ('Call for Proposals', '/cfp', 'cfp'),
