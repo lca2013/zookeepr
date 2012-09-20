@@ -87,7 +87,7 @@ class ScheduleController(BaseController):
             if date.today() in c.scheduled_dates:
                 c.display_date = date.today()
             else:
-                c.display_date = c.scheduled_dates[0]
+                c.display_date = c.scheduled_dates[2]
 
         # Work out which times we should be displaying on the left hand time scale
         c.time_slots = TimeSlot.find_by_date(c.display_date)
