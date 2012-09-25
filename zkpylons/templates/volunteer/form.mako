@@ -1,8 +1,8 @@
-      <p>${ h.event_shortname() } is a grass-roots conference and needs enthusiastic people like you to make it a success! This is a great opportunity to be seen by your peers and give back to the community.</p>
+      <p>${ h.event_name() } is a volunteer-run conference and needs enthusiastic people to make it a success. Volunteering at ${ h.event_shortname() } is a great opportunity to get involved and to give back to the community.</p>
 
-      <p>Volunteers will be expected to attend a training course which will walk them thru tasks such as operating cameras, registering people, etc. Training courses will be held in mid-December, mid-January, and on the weekend before the conference.</p>
+      <p>If you decide to volunteer, you will be asked to attend a training course which will walk you through tasks that you will need to perform. Things like operating video cameras, registering people, and dealing with emergencies are all covered. Training courses will be held in mid-December, mid-January, and on the weekend before the conference. You will only need to attend one course before the conference.</p>
 
-      <p>Please use the check-boxes below to indicate your category, your availability, and areas that you are able to assist with. Please use the "Other:" and "Experience:" text boxes to let us know about any restrictions on your time or special skills you have that might help at the conference.</p>
+      <p>Please use the checkboxes below to indicate your availability and to let us know what kind of thing you can help out with. If you have any restrictions on your time please mention it in the "Other" text box. If you have some skill or experience that you think might really help, mention it in the "Experience" text box.</p>
 
       <table>
 % for category in h.lca_rego['volunteer']:
