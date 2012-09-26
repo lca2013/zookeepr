@@ -193,7 +193,7 @@ lca_menu = [
 ]
 
 lca_submenus = {
- 'about': ['linux.conf.au', '2013 Team'],
+ 'about': ['linux.conf.au', '2013 Team', 'Volunteers'],
  'venue': ['Venues','Conference','Accommodation','Social','Parking','Transport'],
  'programme': ['Sunday', 'Miniconfs', 'Schedule', 'Saturday', 'Partners'],
  'register': [ 'Terms and Conditions', 'Code Of Conduct'],
