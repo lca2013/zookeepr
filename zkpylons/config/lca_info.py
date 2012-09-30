@@ -56,12 +56,6 @@ lca_info = {
 
   'cfp_miniconf_list' : ["(none)", "Open Government", "Arduno Mini-Conference", "OpenStack", "Open Programming Miniconf", "Systems Administration", "Advances in Linux Security", "Cross-Distro Mini-Conf for Linux.conf.au 2013", "Multimedia and Music Miniconf 2013", "Haecksen", "Cloud, Distributed Storage and High Availability", "Developer Automation and Continuous Integration", "Browser Miniconf", "MobileFOSS"],
 
-  'emails': {
-     'presentation' : 'speakers@lca2013.linux.org.au',
-     'tutorial - 1 hour and 30 minutes'     : 'speakers@lca2013.linux.org.au',
-     'miniconf'     : 'miniconfs@lca2013.linux.org.au',
-     'funding'      : 'funding@lca2013.linux.org.au',
-  },
   'sponsors': {
     'top': [
 #      {'alt': 'lca2007', 'src': '/images/history/lca2007-logo.png', 'href': 'http://lca2007.linux.org.au/'},
