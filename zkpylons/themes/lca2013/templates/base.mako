@@ -54,9 +54,11 @@
 <style>
 @font-face {
   font-family: 'Symbola';
-  src: url("Symbola.ttf") format("ttf");
+  src: url('/Symbola.ttf') format('truetype');
 }
-.silly {font-face: 'Symbola';}
+.silly {
+  font-family: 'Symbola';
+}
 </style>
 
 
