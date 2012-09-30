@@ -76,14 +76,12 @@ class SillyDescriptionChecksum(validators.FormValidator):
             return
         checksum = h.silly_description_checksum(silly_description)
         if values.get(self.__checksum_name, None) != checksum:
+            message = random.choice(lca_rego['silly_description']['errors'])
+            checksum = h.silly_description_checksum(message)
             error_dict = {
                 self.__silly_name: """Smart enough to hack the silly description, not smart enough to hack the checksum.
-<style>
-@font-face {font-family: 'Symbola'; src: url("Symbola.ttf") format("ttf");}
-.silly {font-face: 'Symbola';}
-</style>
-<p>%s</p>
-<p>%s</p>""" % (checksum, random.choice(lca_rego['silly_description']['errors'])),
+<span class="silly">%s</span>
+%s""" % (checksum, message),
             }
             raise Invalid(self.__class__.__name__, values, state, error_dict=error_dict)
 
