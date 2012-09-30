@@ -544,6 +544,7 @@ accommdisplay();
 
             <p class="label"><label for="registration.silly_description">Description:</label>
             <blockquote class="entries">${ c.silly_description }</blockquote></p>
+            <form:iferror name="registration.silly_description"><span class="error-message"><form:error name="registration.silly_description" format="none"></span></form:iferror>
             ${ h.hidden('registration.silly_description') }
             ${ h.hidden('registration.silly_description_checksum') }
             <p class="note">This is a randomly chosen description for your name badge</p>
