@@ -1591,7 +1591,10 @@ blockquote,
 /* end LayoutCell, content */
 
 
-
+.entries li
+{
+    list-style: none;
+}
 
 .overview-table .netv-layout-cell
 {
@@ -1665,8 +1668,8 @@ img.image
     font-weight: bold;
     padding: 7px;
     display:block;
-	margin-top: 8px;
-	margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 5px;
 }
 
 .programmeTalkId {
