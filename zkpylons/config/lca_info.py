@@ -47,7 +47,7 @@ lca_info = {
   'proposal_editing' : 'open',
   'funding_status' : 'not_open',
   'funding_editing' : 'not_open',
-  'conference_status': 'not_open',
+  'conference_status': 'open',
   'account_creation': True,
 # Mode
   'cfp_hide_assistance_info': 'no',
@@ -176,7 +176,7 @@ lca_menu = [
  ('Programme', '/programme/schedule', 'programme'),
  ('Venue', '/venue/venues', 'venue'),
  ('Sponsor', '/sponsor/sponsors', 'sponsor'),
- ('Register', '/register', 'register'),
+ ('Register', '/register/prices', 'register'),
 # ('Call for Proposals', '/cfp', 'cfp'),
 # ('Call for Miniconfs', '/miniconf-cfp', 'miniconf-cfp'),
  ('FAQ', '/faq', 'faq'),
@@ -190,6 +190,6 @@ lca_submenus = {
  'about': ['linux.conf.au', '2013 Team', 'Volunteers'],
  'venue': ['Venues','Conference','Accommodation','Social','Parking','Transport'],
  'programme': ['Sunday', 'Miniconfs', 'Schedule', 'Saturday', 'Partners'],
- 'register': [ 'Terms and Conditions', 'Code Of Conduct'],
+ 'register': [ 'Prices', 'Accommodation', 'Business-Case', 'Terms and Conditions', 'Code Of Conduct'],
  'sponsor': ['Sponsors', 'Why Sponsor'],
 }
