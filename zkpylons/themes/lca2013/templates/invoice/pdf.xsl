@@ -548,8 +548,11 @@
              x="78.963058"
              height="21.535383"
              width="66.04184"
-             id="rect3513" /></svg:flowRegion><svg:flowPara style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans" id="flowPara3515"><xsl:value-of select="invoice/items/item3/qty" /></svg:flowPara></svg:flowRoot>      
-	     <svg:flowRoot transform="translate(407.26699,-80.276319)" style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
+             id="rect3513" /></svg:flowRegion><svg:flowPara
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:DejaVu Sans"
+           id="flowPara3515"><xsl:value-ofselect="invoice/items/item3/qty" /></svg:flowPara></svg:flowRoot>      <svg:flowRoot
+         transform="translate(407.26699,-80.276319)"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Helvetica"
          id="flowRoot3517"
          xml:space="preserve"><svg:flowRegion
            id="flowRegion3519"><svg:rect
@@ -1168,7 +1171,7 @@
            x="192.38272"
            y="476.64972" /></svg:flowRegion><svg:flowPara
          id="flowPara2675"
-         style="font-size:14px;font-family:DejaVu Sans"><xsl:value-of select="invoice/issued/date/day" /> <xsl:value-of select="invoice/issued/date/month" />, <xsl:value-of select="invoice/issued/date/year" /></svg:flowPara></svg:flowRoot>    <svg:text
+         style="font-size:14px;font-family:DejaVu Sans"><xsl:value-of select="invoice/issued/date/month" />, <xsl:value-of select="invoice/issued/date/year" /></svg:flowPara></svg:flowRoot>    <svg:text
        xml:space="preserve"
        style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans"
        x="488.2644"
@@ -6756,6 +6759,8 @@ qZUAAAARdEVYdGpwZWc6Y29sb3JzcGFjZQAyLHVVnwAAACB0RVh0anBlZzpzYW1wbGluZy1mYWN0
 b3IAMXgxLDF4MSwxeDHplfxwAAAAEnRFWHR4bXBNTTpEZXJpdmVkRnJvbQCXqCQIAAAAAElFTkSu
 QmCC
 " 
+       height="108.92941"
+       width="622.45386" />
 />
   </svg:g>
 </svg:svg>
