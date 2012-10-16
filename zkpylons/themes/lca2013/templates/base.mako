@@ -48,8 +48,8 @@
         <script type="text/javascript" src="/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="/js/jquery.cross-slide.min.js"></script>
         <link href="/media/news/rss" rel="alternate" type="application/rss+xml" title="${ h.lca_info['event_shortname'] } News">
-        <!--[if IE 6]><link rel="stylesheet" href="ie6.css" type="text/css" media="screen" /><![endif]-->
-        <!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" /><![endif]-->
+        <!--[if IE 6]><link rel="stylesheet" href="/ie6.css" type="text/css" media="screen" /><![endif]-->
+        <!--[if IE 7]><link rel="stylesheet" href="/ie7.css" type="text/css" media="screen" /><![endif]-->
 
 <style>
 @font-face {
@@ -315,8 +315,8 @@
             </div>
         </div>
 
-  <script src="https//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="https//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"><\/script>')</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"><\/script>')</script>
 
   <script src="/js/jquery.masonry.min.js"></script>
   <script src="/js/plugins.js"></script>
