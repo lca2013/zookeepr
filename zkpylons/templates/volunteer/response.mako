@@ -15,7 +15,7 @@ Please select ${ c.volunteer.ticket_type.description } when choosing your ticket
 %  endif
 
 2. Join our Volunteers Mailing list at
-http://lists.followtheflow.org/mailman/listinfo/volunteers
+http://lists.lca2013.linux.org.au/mailman/listinfo/volunteers_lists.lca2013.linux.org.au
 
 Thank you for volunteering for ${ h.event_shortname() }!
 %elif c.volunteer.accepted == False:
