@@ -58,13 +58,17 @@ lca_info = {
 
   'sponsors': {
     'top': [
+       {'alt': 'HP', 'src': '/images/sponsors/HP-logo-front-small.png', 'href': 'http://www.hp.com/'},
+       {'alt': 'IBM', 'src': '/images/sponsors/IBM-front.png', 'href': 'http://www.ibm.com/'},
 #      {'alt': 'lca2007', 'src': '/images/history/lca2007-logo.png', 'href': 'http://lca2007.linux.org.au/'},
 #      {'alt': 'lca2006', 'src': '/images/history/lca2006-logo.png', 'href': 'http://lca2006.linux.org.au/'},
     ],
     'slideshow': [
       {'alt': 'Anchor', 'src': '/images/sponsors/anchor-white-bg.png', 'href': 'http://www.anchor.com.au/'},
       {'alt': 'Linux Magazine', 'src': '/images/sponsors/linux-magazine.png', 'href': 'http://www.linux-magazine.com/'},
-    ],
+#      {'alt': 'HP', 'src': '/images/sponsors/HP-logo-front-small.png', 'href': 'http://www.hp.com/'},
+#      {'alt': 'IBM', 'src': '/images/sponsors/IBM-front.png', 'href': 'http://www.ibm.com/'},
+  ],
   },
 
   'proposal_update_email': 'archive@lca2013.linux.org.au', # recieve notifications when proposals are changed. Leave blank for none.
