@@ -71,6 +71,9 @@ def inherit(context):
 %     else:
         ${ title }
 %     endif
+%     if event.id == 170:
+        (<a href="/register/prices">Tickets</a>)
+%     endif
 %     if speakers:
         <i>by</i> <span class="by_speaker">${ speakers | n }</span>
 %     endif
@@ -129,6 +132,9 @@ def inherit(context):
         ${ h.link_to(title, url=url) }
 %       else:
         ${ title }
+%       endif
+%       if event.id == 8:
+          (<a href="/register/prices">Tickets</a>)
 %       endif
 %       if speakers and not time_slot.heading:
         <i>by</i> <span class="by_speaker">${ speakers | n }</span>
