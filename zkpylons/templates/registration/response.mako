@@ -110,7 +110,7 @@ Thank you for registering your Partner for the ${ h.event_shortname() } Partners
 Your partner will be contacted by our Partner Programme Coordinator on:
 %endif
 
-     partners@lcaunderthestars.org.au
+     partners@lca2013.linux.org.au
 
 %endif
 
