@@ -187,6 +187,7 @@ lca_menu = [
 ## ('Conditions of Registration', '/cor/terms_and_conditions', 'cor'),
  ('Contact', '/contact', 'contact'),
  ('Wiki', '/wiki', 'wiki'),
+ ('Planet', '/planet', 'planet'),
  ('Blog', '/blog', 'blog'),
 ]
 
