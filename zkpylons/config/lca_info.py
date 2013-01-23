@@ -37,7 +37,7 @@ lca_info = {
   'media_license_url'  : 'http://creativecommons.org/licenses/by-sa/3.0/',
   #'sales_tax_multiplier' : 0.125,
   'sales_tax_divisor'    : 11,
-  'time_zone'   : timezone('Australia/Canberra'),
+  'time_zone'   : timezone('Etc/GMT+11'),
 
   'invoice_message' : 'To qualify for the earlybird discount you must have registered and paid by the 8th of November (unless earlybird tickets sell out earlier).',
 
