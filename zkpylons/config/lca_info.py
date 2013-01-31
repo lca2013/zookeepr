@@ -165,13 +165,25 @@ lca_rego = {
                "abstraction", "theorem", "display", "distro",
                "restriction", "device", "function", "reference",
                "alien"],
-        'errors': ["The school parking lot is full of gravel",
-                   "it enhardens my mode of travel.",
-                   "Pizza is an edible food",
-                   "except if the pizza maker is nude.",
-                  ],
-        'emoji': ['8', '5', '3', '7', '0', '1', '2', '6', '4', '9']
-    }
+       'errors' : ["We have discovered a number of flaws in the algorithm, which seriously undermine the security claims of the system",
+               "An integrity check is used to ensure that packets are not modified in transit",
+               "The integrity check field is implemented as a CRC-32 checksum, which is part of the encrypted payload of the packet",
+               "Penguin, pile of poo, skull and crossbones, ...",
+               "... poultry leg, hamburger, elephant, ...",
+               "... pineapple, rat, alien monster, personal computer."
+               ],
+       'emoji': ["&#x1F427;", # 0: penguin, too new to be in many unicode fonts
+               "&#x1F4A9;", # 1: pile of poo
+               "&#x2620;",  # 2: skull and crossbones
+               "&#x1F357;", # 3: poultry leg
+               "&#x1F354;", # 4: hamburger
+               "&#x1F418;", # 5: elephant
+               "&#x1F34D;", # 6: pineapple
+               "&#x1F400;", # 7: rat (note, bigger than a mouse!)
+               "&#x1F47E;", # 8: alien monster
+               "&#x1F4BB;", # 9: personal computer
+               ]
+       }
 }
 
 lca_menu = [
