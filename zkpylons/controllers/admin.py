@@ -718,6 +718,84 @@ class AdminController(BaseController):
                )
             );
         """)
+    @authorize(h.auth.has_organiser_role)
+    def registered_bagdrop(self):
+        """ List of people and swag for bag drop
+        """
+        return sql_response("""
+            SELECT person_id, name, string_agg(CONCAT(qty, 'x ', description), E'\n') as items
+            FROM (
+                SELECT
+                    person.id as person_id, concat(person.firstname, ' ', person.lastname) as name,
+                    fulfilment_item.qty, product.description
+                FROM fulfilment
+                LEFT JOIN person
+                    ON person.id = fulfilment.person_id
+                LEFT JOIN fulfilment_item
+                    ON fulfilment_item.fulfilment_id = fulfilment.id
+                LEFT JOIN product
+                    ON product.id = fulfilment_item.product_id
+                WHERE person_id NOT IN (
+                    SELECT DISTINCT(person_id)
+                    FROM fulfilment
+                    LEFT JOIN fulfilment_item
+                        ON fulfilment_id = fulfilment.id
+                    LEFT JOIN product_ceiling_map
+                        USING (product_id)
+                    WHERE
+                        ceiling_id = '86' -- B&G Accom All
+                        OR ceiling_id = '87' -- John Accom All
+                )
+                AND product.category_id = 2 -- Swag
+                AND product.id NOT IN (85, 82, 83, 51, 86) -- Ditch early accom & Handle own accom
+                AND fulfilment.status_id = 2 -- Pending Bag Drop (for swag only)
+                ORDER BY person.id, product.category_id DESC
+            ) as force_aggregation_to_be_ordered
+            GROUP BY person_id, name
+            ORDER BY person_id
+        """)
+
+    @authorize(h.auth.has_organiser_role)
+    def registered_prestuff(self):
+        """ List of people and swag for bag stuffing
+        """
+        return sql_response("""
+            SELECT person_id, name, string_agg(CONCAT(qty, 'x ', description), E'\n') as items
+            FROM (
+                SELECT
+                    person.id as person_id, concat(person.firstname, ' ', person.lastname) as name,
+                    fulfilment_item.qty, product.description
+                FROM fulfilment
+                LEFT JOIN person
+                    ON person.id = fulfilment.person_id
+                LEFT JOIN fulfilment_item
+                    ON fulfilment_item.fulfilment_id = fulfilment.id
+                LEFT JOIN product
+                    ON product.id = fulfilment_item.product_id
+                WHERE person_id NOT IN (
+                    SELECT DISTINCT(person_id)
+                    FROM fulfilment
+                    LEFT JOIN fulfilment_item
+                        ON fulfilment_id = fulfilment.id
+                    LEFT JOIN product_ceiling_map
+                        USING (product_id)
+                    WHERE
+                        ceiling_id IN(86, 87) -- B&G Accom All, John Accom All
+                ) AND (
+                    (
+                        fulfilment.status_id = 2 -- Pending Bag Drop
+                        AND product.category_id = 2 -- Swag
+                    )
+                    OR product.category_id = 5 -- Accommodation
+                )
+                AND product.id NOT IN (SELECT product_id FROM product WHERE category_id = 5) -- Ditch all accom
+                ORDER BY person.id, product.category_id DESC
+            ) as force_aggregation_to_be_ordered
+            GROUP BY person_id, name
+            ORDER BY person_id
+        """)
+
+
 
     @authorize(h.auth.has_organiser_role)
     def reconcile(self):
